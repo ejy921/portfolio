@@ -1,29 +1,29 @@
-import { assets, personalDescription, infoList, toolsData } from '@/assets/assets'
+import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion"
 
 'use-client';
 
-const MotionImage = motion(Image);
+const MotionImage = motion.create(Image);
 
 const About = () => {
   return (
-    <div id='about' className='w-full px-[5%] py-20 scroll-mt-20 mt-30'>
+    <div id='about' className='w-[80%] px-[5%] py-20 scroll-mt-20 mt-30 ml-[10%]'>
 
-        <div className='flex w-full flex-col lg:flex-row items-center py-10 ml-[160px] mt-10'>
+        <div className='flex flex-col lg:flex-row items-center py-10 mt-10'>
 
-            <div className='relative w-[270px] h-[300px] rounded-3xl mx-auto mb-[90px]'>
+            <div className='relative max-w-[250px] h-[270px] rounded-3xl mb-[30px]'>
                 <Image src={assets.profile_pic} alt="user" className='rounded-2xl object-cover' priority/>
             </div>
 
-            <div className='flex-1 -ml-[80px]'>
+            <div className='flex-1'>
                 <motion.h2 
                 initial={{y: -30, opacity: 0}}
                 whileInView={{y:0, opacity:1}}
                 transition={{duration: 0.6, delay: 0.3}}
                 className='text-center text-6xl font-Ovo pb-6 pr-12'>Hi, I'm Jinny.</motion.h2>
-                <div className='relative w-[550px] h-[420px] mb-5 mt-10 rounded-3xl overflow-hidden mx-auto -mt-[5px]'>
+                <div className='relative w-[580px] h-[450px] mb-5 rounded-3xl overflow-hidden mx-auto'>
                     <MotionImage  
                     initial={{opacity: 0}}
                     whileInView={{opacity:1}}
@@ -42,8 +42,8 @@ const About = () => {
                 </div>
                 
             </div>
-
-            <div className='relative flex flex-col sm:flex-row items-center mr-[300px] -ml-[80px] mb-[170px] hover:translate-y-1 duration-500'>
+            <div className='inline-flex flex-col items-center justify-center gap-10'> 
+                <div className='relative hover:translate-y-1 duration-300'>
                     <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
                         <MotionImage
                             initial={{y: -30, opacity: 0}}
@@ -54,13 +54,30 @@ const About = () => {
                             className='w-[190px] h-[170px] object-cover'
                         />
                         <motion.p
-                        initial={{y: -30, opacity: 0}}
+                            initial={{y: -30, opacity: 0}}
                             whileInView={{y: 0, opacity:1}}
                             transition={{duration: 0.3, delay: 0.8}}
-                        className='absolute inset-[55px] text-center text-gray mt-[10px] text-[25px] font-mono text-bold'>
+                            className='absolute inset-0 flex items-center justify-center text-gray text-[25px] font-mono text-bold'>
                         Resume
                         </motion.p>
                     </a>
+                </div>
+                <div className='relative inline-flex flex-col items-center hover:translate-y-1 duration-300'>
+                    <MotionImage
+                        initial={{y: -30, opacity: 0}}
+                        whileInView={{y: 0, opacity:1}}
+                        transition={{duration: 0.3, delay: 0.8}}
+                        src={assets.colored_paper_1}
+                        alt="art link"
+                        className='w-[160px] object-cover'
+                    />
+                    <motion.p 
+                        initial={{y: -30, opacity: 0}}
+                        whileInView={{y: 0, opacity:1}}
+                        transition={{duration: 0.3, delay: 0.8}}
+                        className='absolute inset-0 flex items-center justify-center text-gray text-[25px] font-mono text-bold'>
+                        Art</motion.p>
+                </div>
             </div>
 
         </div>
@@ -71,10 +88,11 @@ const About = () => {
             <ul 
             className='flex items-center justify-center flex-wrap gap-4 sm:gap-6 mt-6 max-w-[1000px] w-full'>
                 {toolsData.map((tool, index)=>(
-                    <li className='flex-none flex items-center justify-center w-16 sm:w-20 aspect-square p-2 sm:p-3
-                    border border-gray-400 rounded-lg hover:shadow-black hover:translate-y-1 duration-500'
+                    <li className='relative flex-none flex items-center justify-center w-16 sm:w-20 aspect-square p-2 sm:p-3
+                    hover:translate-y-1 duration-500'
                     key={index}>
-                        <Image src={tool} alt="tool" className='w-8 sm:w-10'/>
+                        <Image src={assets.taped_note_1} alt="toolnote" fill className='object-cover items-center'/>
+                        <Image src={tool} alt="tool" className='absolute mt-4 mb-2 w-8 sm:w-10'/>
                     </li>
                 ))}
             </ul>

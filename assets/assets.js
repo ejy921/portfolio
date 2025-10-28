@@ -1,7 +1,9 @@
 import profile_pic from './profile_pic.png';
 import tornpaper_1 from './tornpaper_1.png';
 import resume_paper from './resume_paper.png';
-import taped_note from './taped_note.png';
+import taped_note_1 from './taped_note_1.png';
+import taped_note_2 from './taped_note_2.png';
+import colored_paper_1 from './colored_paper_1.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
@@ -55,7 +57,9 @@ export const assets = {
     profile_pic,
     tornpaper_1,
     resume_paper,
-    taped_note,
+    taped_note_1,
+    taped_note_2,
+    colored_paper_1,
     vscode,
     firebase,
     figma,
@@ -109,61 +113,74 @@ export const assets = {
 export const workData = [
     {
         title: 'Tech Manager - Youphoria',
-        description: 'September 2025 - Present',
+        duration: 'September 2025 - Present',
         icon: assets.youphoria,
+        description: 'As Technology Manager at Youphoria Remote, I guide the development of our iOS app and a growing team of five engineers. Our work supports over 1,000 users, and I lead monthly all-hands meetings to drive collaboration and keep our 50+ member team aligned on goals.'
     },
     {
         title: 'Software Developer - Youphoria',
-        description: 'May 2025 - September 2025',
+        duration: 'May 2025 - September 2025',
         icon: assets.youphoria,
+        description: 'I developed real-time messaging and targeted notification features with Swift and Firebase, increasing user responsiveness by 20%.'
     },
     {
         title: 'Research Assistant - ELBICA Lab, Grinnell College',
-        description: 'May 2024 - December 2024',
+        duration: 'May 2024 - December 2024',
         icon: assets.grinnell_college,
+        description: 'I conducted research on bio-inspired AI, developing a cognitive model that integrates distributed representations within multimodal architectures. Through an extensive review of over 50 research papers, I designed a Bayesian approach for more precise causal inference in reasoning and improved the model’s computational efficiency by 20% by optimizing verbal and visual reasoning processes.'
     },
     {
         title: 'Technology Intern - Youphoria',
-        description: 'January 2025 - May 2025',
+        duration: 'January 2025 - May 2025',
         icon: assets.youphoria,
+        description: 'Joined Youphoria Remote as an intern, where I explored how different departments work together to grow a startup. I contributed to team discussions, helped prototype app features, and learned how product, design, and engineering align to create a unified user experience.'
     },
     {
         title: 'Student Software Developer - Grinnell College',
-        description: 'August 2024 - Present',
+        duration: 'August 2024 - Present',
         icon: assets.grinnell_college,
+        description: 'I built a full-stack Title IX support app with React Native and REST APIs to make it easier for students to find campus resources. I also designed a 30-frame prototype in Figma and improved it with client feedback, cutting usability issues by about 40%. Our team ended up winning 1st place (and $500) in a campus pitch competition against 10 other teams.'
     },
     {
         title: 'Facilitator - Girls Who Code',
-        description: 'August 2024 - Present',
+        duration: 'August 2024 - Present',
         icon: assets.girls_who_code,
+        description: 'I lead weekly coding sessions for female and nonbinary students, introducing them to computer science in a fun, hands-on way. We experiment with Sphero robots, build creative projects, and explore what it means to think like a programmer.'
     },
     {
         title: 'Leader - AI/ML Club, Grinnell College',
-        description: 'August 2024 - December 2024',
+        duration: 'August 2024 - December 2024',
         icon: assets.grinnell_college,
+        description: 'I helped run the Machine Learning Club, hosting meetings and guiding projects so everyone could explore AI in a practical way. I also got to work with a team to make a personalized quote recommender app that suggested quotes based on what users liked'
     },
     {
         title: 'Freelance Korean/English Translator - Fiverr',
-        description: 'December 2023 - March 2025',
+        duration: 'December 2023 - March 2025',
         icon: assets.fiverr,
+        description: 'I provided translation services for clients around the world, helping them communicate across languages in business, education, and creative projects. I worked on over 40 projects and consistently received excellent feedback for delivering clear, high-quality translations, including a 5-star review on my profile!'
     },
     {
         title: 'Intern - InvestIN Youth Computer Science Internship',
-        description: 'August 2021 - August 2021',
+        duration: 'August 2021 - August 2021',
         icon: assets.investin,
+        description: 'I dove into cybersecurity and software engineering, learning how to build secure applications that passed all our internal security audits over a year. I also spent time in hands-on workshops, tackling real-world problems and improving my skills along the way.'
     },
 ]
 
 export const projectData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { 
+        icon: assets.web_icon, title: 'Unix Shell', duration: 'Web development is the process of building, programming...', link: '' 
+    },
+    { 
+        icon: assets.mobile_icon, title: 'Algorithm Visualizer', duration: 'Mobile app development involves creating software for mobile devices...', link: '' 
+    },
+    {
+        icon: assets.ui_icon, title: 'Book tracker UI', duration: 'UI/UX design focuses on creating a seamless user experience...', link: '' 
+    },
+    { 
+        icon: assets.graphics_icon, title: 'PhiloQuotes', duration: 'Creative design solutions to enhance visual communication...', link: '' 
+    },
 ]
-
-export const infoList = [
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
-];
 
 export const toolsData = [
     assets.python, assets.java, assets.c, assets.r, assets.javascript, assets.html, assets.css, 

@@ -1,4 +1,4 @@
-import { workData } from '@/assets/assets'
+import { workData, assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
@@ -9,16 +9,19 @@ const Experience = () => {
             <div className='relative w-full flex flex-col items-center py-16'>
 
                 <div className='absolute w-[5px] bg-gray-700 top-0 bottom-0 left-1/2 transform -translate-x-1/2'></div>
-                <div className='flex flex-col gap-[40px]'>
-                    {workData.map(({title, description, icon}, index)=>(
-                        <div key={index} className={`flex flex-col items-center relative ${index % 2 === 0 ? "justify-start" : "justify-end"} ${index !== 0 ? "-mt-20" : ""}`}> 
+                <div className='flex flex-col'>
+                    {workData.map(({title, duration, icon}, index)=>(
+                        <div key={index} className={`relative flex flex-col items-center justify-center ${index % 2 === 0 ? "justify-start" : "justify-end"} ${index !== 0 ? "-mt-[30%]" : ""}`}> 
                             <div className='absolute left-1/2 top-1/2 w-4 h-4 bg-gray-700 rounded-full transform -translate-x-1/2 -translate-y-1/2'></div>
-                            <div className={`flex flex-col lg:flex-row items-center w-[75%] min-h-[100px] border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:-translate-y-1 duration-500 ${index % 2 === 0 ? "-mr-[85%]" : "-ml-[85%]"}`}>
-                                <div className='relative w-[70%]'>
-                                    <h3 className='text-lg text-gray-700'>{title}</h3>
-                                    <p className='text-xsm text-gray-600 leading-7'>{description}</p>
+                            <div className={`relative flex flex-row object-cover items-center min-h-[100px] rounded-lg px-2 py-6 cursor-pointer hover:translate-y-1 duration-500 ${index % 2 === 0 ? "-mr-[110%]" : "-ml-[95%]"}`}>
+                                <Image src={assets.taped_note_2} alt="worknote" className='object-cover'/>  
+                                <div className='absolute flex flex-row items-center w-[75%] ml-[5%]'>
+                                    <div fill className='relative w-[75%] h-[130px]'>               
+                                        <h3 className='relative text-lg text-gray-700 leading-[43px]'>{title}</h3>
+                                        <p className='relative text-xsm text-gray-600 leading-7'>{duration}</p>
+                                    </div>
+                                    <Image src={icon} alt='icon' className='relative w-[25%] h-[25%]' />
                                 </div>
-                                <Image src={icon} alt='icon' className='w-[70px] mr-[10px]' />
                             </div>
                         </div>
                     ))}
