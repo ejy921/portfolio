@@ -13,7 +13,7 @@ const Experience = () => {
 
                 <div className='absolute w-[5px] bg-gray-700 top-0 bottom-0 left-1/2 transform -translate-x-1/2'></div>
                 <div className='flex flex-col'>
-                    {workData.map(({title, duration, icon}, index)=>(
+                    {workData.map(({title, duration, icon, description}, index)=>(
                         <div key={index} className={`relative flex flex-col items-center justify-center ${index % 2 === 0 ? "justify-start" : "justify-end"} ${index !== 0 ? "-mt-[30%]" : ""}`}> 
                             {/* Circle */}
                             <div className='absolute left-1/2 top-1/2 w-4 h-4 bg-gray-700 rounded-full transform -translate-x-1/2 -translate-y-1/2'></div>
@@ -31,11 +31,14 @@ const Experience = () => {
                                     </div>
                                 </div>
                                 {/* Description */}
-                                <motion.div className='relative inset-0 h-full [transform-style:preserve-3d] z-10 border-black border-[3px] pointer-events-auto'
-                                    style={{ transformOrigin: 'left' }}
-                                    whileHover={{ rotateY: 180 }}
+                                <motion.div className='relative inset-0 h-full [transform-style:preserve-3d] z-10 pointer-events-auto'
+                                    style={{ transformOrigin: index % 2 === 0 ? 'right' : 'left' }}
+                                    whileHover={{ rotateY: index % 2 === 0 ? -180 : 180, x: index % 2 !== 0 ? -10 : -60 }}
                                     transition={{ duration: 0.5 }}>
                                     <Image src={assets.taped_note_2} alt="worknote" className='object-cover'/>
+                                    <div className='absolute flex inset-0 items-center justify-center p-4 [transform:rotateY(180deg)] backface-hidden rotate-y-180'>
+                                        <p className='ml-[30px] text-[15px]' style={{ lineHeight: '1.4' }}>{description}</p>
+                                    </div>
                                 </motion.div>
                             </div>
                             {/* Tape */}
