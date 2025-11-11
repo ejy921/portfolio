@@ -4,6 +4,7 @@ import resume_paper from './resume_paper.png';
 import taped_note_1 from './taped_note_1.png';
 import taped_note_2 from './taped_note_2.png';
 import colored_paper_1 from './colored_paper_1.png';
+import project_background from './project_background.png';
 import tape from './tape.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
@@ -61,6 +62,7 @@ export const assets = {
     taped_note_1,
     taped_note_2,
     colored_paper_1,
+    project_background,
     tape,
     vscode,
     firebase,

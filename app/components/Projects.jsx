@@ -9,12 +9,14 @@ const Projects = () => {
 
         <div className='grid grid-cols-auto gap-6 my-10'>
             {projectData.map(({icon, title, description, link}, index)=>(
-                <div key={index} className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500'>
-                    <Image src={icon} alt='icon' className='w-10' />
-                    <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
-                    <p className='text-xxs text-gray-600 leading-5'>{description}</p>
-                    <a href={link} className='flex items_center gap-2 text-sm mt-5 underline'>
-                        Read more</a>
+                <div key={index} className='flex flex-row object-cover items-center cursor-pointer'>
+                    <Image src={assets.project_background} alt='background' className='object-cover opacity-[0.7]' />
+                    <div className='absolute flex flex-col items-center justify-center'>
+                        <h3 className='text-lg text-gray-700'>{title}</h3>
+                        <p className='text-xxs text-gray-600'>{description}</p>
+                        <a href={link} className='flex items-center gap-2 text-sm mt-5 underline'>
+                            Read more</a>
+                    </div>  
                 </div>
             ))}
         </div>

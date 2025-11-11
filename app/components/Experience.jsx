@@ -18,26 +18,26 @@ const Experience = () => {
                             {/* Circle */}
                             <div className='absolute left-1/2 top-1/2 w-4 h-4 bg-gray-700 rounded-full transform -translate-x-1/2 -translate-y-1/2'></div>
                             
-                            <div className={`relative min-h-[130px] px-2 py-6 cursor-pointer -mb-[50px] ${index % 2 === 0 ? "-mr-[110%]" : "-ml-[95%]"}`} style={{ perspective: 1000 }}>
+                            <div className={`relative min-h-[130px] px-2 py-6 cursor-pointer ${index % 2 === 0 ? "-mr-[110%]" : "-ml-[85%]"}`} style={{ perspective: 1000 }}>
                                 {/* Work Entry */}
-                                <div className='absolute flex flex-row object-cover items-center min-h-[100px] rounded-lg z-20 pointer-events-none'>
-                                    <Image src={assets.taped_note_2} alt="worknote" className='object-cover pointer-events-none'/>  
-                                    <div className='absolute flex flex-row items-center w-[75%] ml-[5%] pointer-events-none'>
-                                        <div fill className='relative w-[75%] h-[130px]'>               
-                                            <h3 className='relative text-lg text-gray-700 leading-[43px]'>{title}</h3>
-                                            <p className='relative text-xsm text-gray-600 leading-7'>{duration}</p>
+                                <div className='absolute flex flex-row object-cover items-center w-[80%] aspect-[4/3] rounded-lg z-20 pointer-events-none'>
+                                    <Image src={assets.project_background} alt="worknote" className='object-cover pointer-events-none' />
+                                    <div className='absolute flex flex-row items-center w-[75%] ml-[10%] pointer-events-none'>
+                                        <div fill="true" className='relative w-[75%] h-[130px]'>               
+                                            <h3 className='relative text-lg text-gray-700 leading-[30px]'>{title}</h3>
+                                            <p className='relative text-xsm text-gray-600 leading-4 mt-[10px]'>{duration}</p>
                                         </div>
-                                        <Image src={icon} alt='icon' className='relative w-[25%] h-[25%]' />
+                                        <Image src={icon} alt='icon' className='relative w-[25%] h-[25%] ml-[10%]' />
                                     </div>
                                 </div>
                                 {/* Description */}
-                                <motion.div className='relative inset-0 h-full [transform-style:preserve-3d] z-10 pointer-events-auto'
+                                <motion.div className='relative w-[85%] [transform-style:preserve-3d] mt-[10px] z-10 pointer-events-auto'
                                     style={{ transformOrigin: index % 2 === 0 ? 'right' : 'left' }}
-                                    whileHover={{ rotateY: index % 2 === 0 ? -180 : 180, x: index % 2 !== 0 ? -10 : -60 }}
+                                    whileHover={{ rotateY: index % 2 === 0 ? -180 : 180, x: index % 2 !== 0 ? 0 : -8 }}
                                     transition={{ duration: 0.5 }}>
-                                    <Image src={assets.taped_note_2} alt="worknote" className='object-cover'/>
-                                    <div className='absolute flex inset-0 items-center justify-center p-4 [transform:rotateY(180deg)] backface-hidden rotate-y-180'>
-                                        <p className='ml-[30px] text-[15px]' style={{ lineHeight: '1.4' }}>{description}</p>
+                                    <Image src={assets.project_background} alt="worknote" className='object-cover w-full opacity-[60%]'/>
+                                    <div className='absolute flex inset-0 items-center p-4 [transform:rotateY(180deg)] backface-hidden rotate-y-180'>
+                                        <p className='ml-[17px] text-[13px] text-gray-700' style={{ lineHeight: '1.4' }}>{description}</p>
                                     </div>
                                 </motion.div>
                             </div>
@@ -45,12 +45,7 @@ const Experience = () => {
                             <MotionImage
                                 src={assets.tape}
                                 alt='tape'
-                                key={index}
-                                // initial={{ rotate: 0}}
-                                // animate={{ rotate: 15 }}
-                                // transition={{ duration: 0.5 }}
-                                // style={{ transformOrigin: 'left-center'}}
-                                className={`absolute w-[70px] h-7 transform rotate-90 ${index % 2 === 0 ? "-right-[203px]" : "-left-[210px]"}`}
+                                className={`absolute w-[80px] h-9 transform rotate-90 ${index % 2 === 0 ? "-right-[194px]" : "-left-[210px]"}`}
                             />
                         </div>
                     ))}
