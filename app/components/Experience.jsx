@@ -21,7 +21,7 @@ const Experience = () => {
                             <div className={`relative min-h-[130px] px-2 py-6 cursor-pointer ${index % 2 === 0 ? "-mr-[110%]" : "-ml-[85%]"}`} style={{ perspective: 1000 }}>
                                 {/* Work Entry */}
                                 <div className='absolute flex flex-row object-cover items-center w-[80%] aspect-[4/3] rounded-lg z-20 pointer-events-none'>
-                                    <Image src={assets.project_background} alt="worknote" className='object-cover pointer-events-none' />
+                                    <Image src={assets.experience_background} alt="worknote" className='object-cover pointer-events-none' />
                                     <div className='absolute flex flex-row items-center w-[75%] ml-[10%] pointer-events-none'>
                                         <div fill="true" className='relative w-[75%] h-[130px]'>               
                                             <h3 className='relative text-lg text-gray-700 leading-[30px]'>{title}</h3>
@@ -35,7 +35,7 @@ const Experience = () => {
                                     style={{ transformOrigin: index % 2 === 0 ? 'right' : 'left' }}
                                     whileHover={{ rotateY: index % 2 === 0 ? -180 : 180, x: index % 2 !== 0 ? 0 : -8 }}
                                     transition={{ duration: 0.5 }}>
-                                    <Image src={assets.project_background} alt="worknote" className='object-cover w-full opacity-[60%]'/>
+                                    <Image src={assets.experience_background} alt="worknote" className='object-cover w-full opacity-[60%]'/>
                                     <div className='absolute flex inset-0 items-center p-4 [transform:rotateY(180deg)] backface-hidden rotate-y-180'>
                                         <p className='ml-[17px] text-[13px] text-gray-700' style={{ lineHeight: '1.4' }}>{description}</p>
                                     </div>

@@ -9,9 +9,9 @@ const Projects = () => {
 
         <div className='grid grid-cols-auto gap-6 my-10'>
             {projectData.map(({icon, title, description, link}, index)=>(
-                <div key={index} className='flex flex-row object-cover items-center cursor-pointer'>
+                <div key={index} className='flex flex-row object-cover justify-center cursor-pointer'>
                     <Image src={assets.project_background} alt='background' className='object-cover opacity-[0.7]' />
-                    <div className='absolute flex flex-col items-center justify-center'>
+                    <div className='absolute flex flex-col mt-5 justify-center'>
                         <h3 className='text-lg text-gray-700'>{title}</h3>
                         <p className='text-xxs text-gray-600'>{description}</p>
                         <a href={link} className='flex items-center gap-2 text-sm mt-5 underline'>

@@ -78,6 +78,12 @@ const About = () => {
                         transition={{duration: 0.3, delay: 0.8}}
                         className='absolute inset-0 flex items-center justify-center text-gray text-[25px] font-mono text-bold'>
                         Art</motion.p>
+                    <motion.p 
+                        initial={{y: -30, opacity: 0}}
+                        whileInView={{y: 0, opacity:1}}
+                        transition={{duration: 0.3, delay: 0.8}}
+                        className='absolute bottom-9 text-gray text-[15px] font-mono text-bold'>
+                        (Coming soon)</motion.p>
                 </div>
             </div>
 
