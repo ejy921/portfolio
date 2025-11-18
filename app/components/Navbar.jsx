@@ -1,3 +1,5 @@
+'use client';
+
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
@@ -31,26 +33,13 @@ const Navbar = () => {
   return (
     <>
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 
-            flex items-center justify-between z-10 backdrop-blur-lg shadow-sm ${isScroll ? "backdrop-blur-lg shadow-sm" : ""}`}>
+            flex items-center justify-end z-10 backdrop-blur-lg shadow-sm ${isScroll ? "backdrop-blur-lg shadow-sm" : ""}`}>
             <ul className={`hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "shadow-sm bg-opacity-50"}`}>
                 <li><a className='font-Ovo' href="#top">Home</a></li>
                 <li><a className='font-Ovo' href="#experience">Experience</a></li>
                 <li><a className='font-Ovo' href="#projects">Projects</a></li>
                 <li><a className='font-Ovo' href="#contact">Contact me</a></li>
             </ul>
-
-            <div className='flex items-center gap-4'>
-
-                <button>
-                    <Image src={assets.moon_icon} alt="moon" className='w-6'/>
-                </button>
-                <a href="#contact" className='hidden lg:flex item-center gap-3 px-10 py-2.5 
-                border border-gray-500 rounded-full ml-4 font-Ovo'>Contact</a>
-
-                <button className='block md:hidden ml-3' onClick={openMenu}>
-                    <Image src={assets.menu_black} alt="menu" className='w-6'/>
-                </button>
-            </div>
 
             {/* ------------mobile menu -------------------*/}
 

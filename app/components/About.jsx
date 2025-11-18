@@ -1,9 +1,9 @@
+'use client';
+
 import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion"
-
-'use-client';
 
 const MotionImage = motion.create(Image);
 
@@ -34,11 +34,11 @@ const About = () => {
                     initial={{opacity: 0}}
                     whileInView={{opacity:1}}
                     transition={{duration: 0.6, delay: 0.7}}
-                    className='absolute inset-0 flex flex-col items-end justify-center mb-5 max-w-2xl text-[13px] leading-tight leading-tight -ml-[80px] mb-[70px]'>
-                        <p className='w-[250] font-mono typewriter'>I'm a senior studying Computer Science at Grinnell College with a focus on building impactful</p>
-                        <p className='w-[400] font-mono typewriter'>solutions through technology. With a strong foundation in algorithms, data structures, and machine learning, I thrive in exploring new tools, technologies, 
-                        and frameworks to solve complex problems. I aim to create meaningful contributions in areas such as AI, software development, and computational modeling, 
-                        with a continuous drive to grow and innovate.</p>
+                    className='absolute inset-0 flex flex-col items-end justify-center mb-5 max-w-2xl text-[13px] leading-[1.2] -ml-[160px] mb-[70px]'>
+                        <p className='w-[250] font-mono typewriter'>I’m Jinny Eo, a full-stack developer and Grinnell College senior</p>
+                        <p className='w-[400] font-mono typewriter'>who loves building clean, thoughtful digital experiences. I’ve led 
+                            engineering for real products, from iOS apps with thousands of users to full-stack tools that solve real problems on campus. 
+                            I move fast, design with intention, and bring a mix of technical depth and creative curiosity to every project I take on.</p>
                     </motion.div>    
                 </div>
                 

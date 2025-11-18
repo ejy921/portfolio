@@ -175,17 +175,17 @@ export const workData = [
 
 export const projectData = [
     { 
-        icon: assets.web_icon, title: 'Unix Shell', duration: 'Web development is the process of building, programming...', link: '' 
+        title: 'Unix Shell', description: 'An interactive program to allow starting and managing other programs. It supports functionality to run programs in the background and foreground, as well as basic file operations using parent and child threads.', link: '' 
     },
     { 
-        icon: assets.mobile_icon, title: 'Algorithm Visualizer', duration: 'Mobile app development involves creating software for mobile devices...', link: '' 
+        title: 'Algorithm Visualizer', description: 'A full-stack web app that visualizes algorithms in action, helping users understand complex concepts through interactive animations and real-time code execution.', link: '' 
     },
     {
-        icon: assets.ui_icon, title: 'Book tracker UI', duration: 'UI/UX design focuses on creating a seamless user experience...', link: '' 
+        title: 'Book tracker UI', description: 'A user-friendly interface for a book tracking app, focusing on intuitive navigation and a visually appealing layout to enhance the reading experience.', link: '' 
     },
-    { 
-        icon: assets.graphics_icon, title: 'PhiloQuotes', duration: 'Creative design solutions to enhance visual communication...', link: '' 
-    },
+    // { 
+    //     title: 'PhiloQuotes', description: 'I created a web app that generates and displays philosophical quotes, allowing users to explore different perspectives and share their favorites.', link: '' 
+    // },
 ]
 
 export const toolsData = [

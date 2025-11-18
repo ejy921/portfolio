@@ -8,12 +8,12 @@ const Projects = () => {
       <h2 className='text-center text-5xl font-Ovo'>Projects</h2>
 
         <div className='grid grid-cols-auto gap-6 my-10'>
-            {projectData.map(({icon, title, description, link}, index)=>(
-                <div key={index} className='flex flex-row object-cover justify-center cursor-pointer'>
+            {projectData.map(({title, description, link}, index)=>(
+                <div key={index} className='relative flex flex-row object-cover justify-center overflow-hidden cursor-pointer'>
                     <Image src={assets.project_background} alt='background' className='object-cover opacity-[0.7]' />
-                    <div className='absolute flex flex-col mt-5 justify-center'>
+                    <div className='absolute flex flex-col mt-5 justify-center overflow-hidden p-[20px] px-10'>
                         <h3 className='text-lg text-gray-700'>{title}</h3>
-                        <p className='text-xxs text-gray-600'>{description}</p>
+                        <p className='relative text-[10px] text-gray-800 leading-4 p-[4px]'>{description}</p>
                         <a href={link} className='flex items-center gap-2 text-sm mt-5 underline'>
                             Read more</a>
                     </div>  
