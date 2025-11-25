@@ -5,8 +5,6 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion"
 
-import profile_pic from '/assets/profile_pic.png'
-
 const MotionImage = motion.create(Image);
 
 const About = () => {
@@ -16,7 +14,7 @@ const About = () => {
         <div className='flex flex-col lg:flex-row items-center py-10 mt-8'>
 
             <div className='relative max-w-[250px] h-[270px] rounded-3xl mb-[30px] overflow-hidden'>
-                <Image src={profile_pic} alt="user" className='rounded-2xl object-cover object-fill' priority/>
+                <Image src={'/profile_pic.png'} alt="user" className='rounded-2xl object-cover object-fill' priority/>
                 <Image src={assets.tape} alt="tape" className='absolute w-[120px] h-[60px] top-0 left-1 -rotate-45 -translate-x-8'/>
             </div>
 
