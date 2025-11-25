@@ -78,7 +78,7 @@ const About = () => {
                         whileInView={{y: 0, opacity:1}}
                         transition={{duration: 0.3, delay: 0.8}}
                         style={{fontFamily: "'Gloria Hallelujah', cursive"}}
-                        className='absolute inset-0 flex items-center justify-center text-gray text-[25px] font-mono text-bold'>
+                        className='absolute inset-0 flex items-center justify-center text-gray text-[25px] mb-[10px] font-mono text-bold'>
                         Art</motion.p>
                     <motion.p 
                         initial={{y: -30, opacity: 0}}
