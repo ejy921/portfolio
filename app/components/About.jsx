@@ -5,7 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion"
 
-import profile_pic from '../assets/profile-pic.png'
+import profile_pic from '/assets/profile_pic.png'
 
 const MotionImage = motion.create(Image);
 
