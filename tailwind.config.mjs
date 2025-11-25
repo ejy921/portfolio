@@ -15,9 +15,10 @@ export default {
         darkTheme: '#11001F',
       },
       fontFamily: {
-        Outfit: ["Outfit", "sans-serif"],
-        Ovo: ["Ovo", "serif"],
+        Outfit: ["var(--font-outfit)", "Outfit", "sans-serif"],
+        Ovo: ["var(--font-ovo)", "Ovo", "serif"],
         mono: ["Courier Prime", "monospace"],
+        longCang: ["Long Cang", "cursive"],
       },
       boxShadow: {
         'black' : '2px 4px 0 #000',

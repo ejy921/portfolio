@@ -9,12 +9,12 @@ const MotionImage = motion.create(Image);
 
 const About = () => {
   return (
-    <div id='about' className='w-[80%] px-[5%] py-20 scroll-mt-20 mt-30 ml-[10%]'>
+    <div id='about' className='w-[80%] px-[5%] py-20 scroll-mt-20 ml-[10%]'>
 
-        <div className='flex flex-col lg:flex-row items-center py-10 mt-10'>
+        <div className='flex flex-col lg:flex-row items-center py-10 mt-8'>
 
-            <div className='relative max-w-[250px] h-[270px] rounded-3xl mb-[30px]'>
-                <Image src={assets.profile_pic} alt="user" className='rounded-2xl object-cover' priority/>
+            <div className='relative max-w-[250px] h-[270px] rounded-3xl mb-[30px] overflow-hidden'>
+                <Image src={assets.profile_pic} alt="user" className='rounded-2xl object-cover object-fill' priority/>
                 <Image src={assets.tape} alt="tape" className='absolute w-[120px] h-[60px] top-0 left-1 -rotate-45 -translate-x-8'/>
             </div>
 
@@ -34,9 +34,9 @@ const About = () => {
                     initial={{opacity: 0}}
                     whileInView={{opacity:1}}
                     transition={{duration: 0.6, delay: 0.7}}
-                    className='absolute inset-0 flex flex-col items-end justify-center mb-5 max-w-2xl text-[13px] leading-[1.2] -ml-[160px] mb-[70px]'>
-                        <p className='w-[250] font-mono typewriter'>I’m Jinny Eo, a full-stack developer and Grinnell College senior</p>
-                        <p className='w-[400] font-mono typewriter'>who loves building clean, thoughtful digital experiences. I’ve led 
+                    className='absolute inset-0 flex flex-col items-end justify-center mb-5 max-w-2xl text-[14px] leading-[2.0] -ml-[160px] mb-[80px]'>
+                        <p style={{fontFamily: "'Gloria Hallelujah', cursive"}} className='w-[300px] font-longCang'>I’m Jinny Eo, a full-stack developer and Grinnell College senior who loves building clean, thoughtful digital experiences. </p>
+                        <p style={{fontFamily: "'Gloria Hallelujah', cursive"}} className='w-[400px] font-longCang'>I’ve led 
                             engineering for real products, from iOS apps with thousands of users to full-stack tools that solve real problems on campus. 
                             I move fast, design with intention, and bring a mix of technical depth and creative curiosity to every project I take on.</p>
                     </motion.div>    
@@ -58,6 +58,7 @@ const About = () => {
                             initial={{y: -30, opacity: 0}}
                             whileInView={{y: 0, opacity:1}}
                             transition={{duration: 0.3, delay: 0.8}}
+                            style={{fontFamily: "'Gloria Hallelujah', cursive"}}
                             className='absolute inset-0 flex items-center justify-center text-gray text-[25px] font-mono text-bold'>
                         Resume
                         </motion.p>
@@ -76,12 +77,14 @@ const About = () => {
                         initial={{y: -30, opacity: 0}}
                         whileInView={{y: 0, opacity:1}}
                         transition={{duration: 0.3, delay: 0.8}}
+                        style={{fontFamily: "'Gloria Hallelujah', cursive"}}
                         className='absolute inset-0 flex items-center justify-center text-gray text-[25px] font-mono text-bold'>
                         Art</motion.p>
                     <motion.p 
                         initial={{y: -30, opacity: 0}}
                         whileInView={{y: 0, opacity:1}}
                         transition={{duration: 0.3, delay: 0.8}}
+                        style={{fontFamily: "'Gloria Hallelujah', cursive"}}
                         className='absolute bottom-9 text-gray text-[15px] font-mono text-bold'>
                         (Coming soon)</motion.p>
                 </div>
