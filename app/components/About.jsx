@@ -15,7 +15,7 @@ const About = () => {
 
             <div className='relative max-w-[250px] h-[270px] rounded-3xl mb-[30px] overflow-hidden'>
                 <Image src={'/profile_pic.png'} alt="user" className='rounded-2xl object-cover object-fill' priority/>
-                <Image src={assets.tape} alt="tape" className='absolute w-[120px] h-[60px] top-0 left-1 -rotate-45 -translate-x-8'/>
+                <Image src={'./assets/tape.png'} alt="tape" className='absolute w-[120px] h-[60px] top-0 left-1 -rotate-45 -translate-x-8'/>
             </div>
 
             <div className='flex-1'>
@@ -29,7 +29,7 @@ const About = () => {
                     initial={{opacity: 0}}
                     whileInView={{opacity:1}}
                     transition={{duration: 0.6, delay: 0.5}}
-                    src={assets.tornpaper_1} alt="paper" priority fill="true" sizes="(max-width: 768px) 100vw, 580px" className='w-[400px] h-[300px] object-cover'/>
+                    src={'main/assets/tornpaper_1.png'} alt="paper" priority fill="true" sizes="(max-width: 768px) 100vw, 580px" className='w-[400px] h-[300px] object-cover'/>
                     <motion.div 
                     initial={{opacity: 0}}
                     whileInView={{opacity:1}}
@@ -50,7 +50,7 @@ const About = () => {
                             initial={{y: -30, opacity: 0}}
                             whileInView={{y: 0, opacity:1}}
                             transition={{duration: 0.3, delay: 0.8}}
-                            src={assets.resume_paper}
+                            src={'main/assets/resume_paper.png'}
                             alt="resume"
                             className='w-[190px] h-[170px] object-cover'
                         />
