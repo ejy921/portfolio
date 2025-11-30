@@ -6,13 +6,8 @@ const nextConfig = {
     images: {
       unoptimized: true, 
     },
-    assetPrefix: isProd ? '/portfolio/' : '',
     basePath: isProd ? '/portfolio' : '',
-    // Only use basePath in production (for GitHub Pages deployment)
-    ...(process.env.NODE_ENV === 'production' && {
-      basePath: '/portfolio',
-      assetPrefix: '/portfolio/',
-    }),
+    assetPrefix: isProd ? '/portfolio/' : '',
   };
 
 export default nextConfig;
