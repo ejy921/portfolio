@@ -1,4 +1,5 @@
 import { Outfit, Ovo } from "next/font/google";
+import { assets } from "../../assets/assets";
 
 import "./globals.css";
 
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body
         suppressHydrationWarning
-        className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden bg-[url('/background.jpg')] bg-cover bg-fixed bg-center bg-no-repeat min-h-screen m-0 p-0`}
+        className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden bg-[url('${assets.background.src}')] bg-cover bg-fixed bg-center bg-no-repeat min-h-screen m-0 p-0`}
       >
         {children}
       </body>

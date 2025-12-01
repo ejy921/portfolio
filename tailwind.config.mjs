@@ -1,5 +1,3 @@
-import { Courier_Prime } from 'next/font/google';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -18,12 +16,12 @@ export default {
         Outfit: ["var(--font-outfit)", "Outfit", "sans-serif"],
         Ovo: ["var(--font-ovo)", "Ovo", "serif"],
         mono: ["Courier Prime", "monospace"],
-        longCang: ["Long Cang", "cursive"],
+        gloria: ['"Gloria Hallelujah"', 'cursive'],
       },
       boxShadow: {
         'black' : '2px 4px 0 #000',
       },
-      gridTemplateColumns: {
+      gridTemplateColumns: {  
         'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
       }
     },

@@ -7,6 +7,7 @@ import colored_paper_1 from './colored_paper_1.png';
 import experience_background from './experience_background.png';
 import project_background from './project_background.png';
 import tape from './tape.png';
+import background from './background.jpg';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
@@ -55,6 +56,7 @@ export const assets = {
     experience_background,
     project_background,
     tape,
+    background,
     vscode,
     firebase,
     figma,
