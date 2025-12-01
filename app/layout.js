@@ -1,5 +1,5 @@
 import { Outfit, Ovo } from "next/font/google";
-import { assets } from "../../assets/assets";
+import { assets } from "../assets/assets";
 
 import "./globals.css";
 
