@@ -12,7 +12,7 @@ const Projects = () => {
                 <div key={index} className='relative flex flex-col max-w-[400px] object-cover overflow-hidden cursor-pointer'>
                     <Image src={assets.project_background} alt='background' className='object-cover opacity-[0.7]' />
                     <div className='absolute flex flex-col mt-5 justify-center overflow-hidden p-[20px] px-10'>
-                        <h3 style={{fontFamily: "'Gloria Hallelujah', cursive"}} className='text-[25px] text-gray-700 ml-[5px]'>{title}</h3>
+                        <h3 className='text-[25px] text-gray-700 ml-[5px] font-gloria'>{title}</h3>
                         <p className='relative text-[12px] text-gray-800 leading-4 mt-2 p-[6px] overflow-hidden break-words'>{description}</p>
                         <a href={link} target='_blank' rel='noopener noreferrer' className='cursor-pointer flex items-center gap-2 text-sm mt-5 ml-4 underline'>
                             Read more!</a>

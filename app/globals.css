@@ -9,3 +9,7 @@ html, body {
 .font-Ovo {
   font-family: var(--font-ovo), "Ovo", serif;
 }
+
+.font-gloria {
+  font-family: "Gloria Hallelujah", cursive;
+}

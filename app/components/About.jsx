@@ -8,6 +8,9 @@ import { motion } from "framer-motion"
 const MotionImage = motion.create(Image);
 
 const About = () => {
+  const isProd = process.env.NODE_ENV === 'production';
+  const resumePath = `${isProd ? '/portfolio' : ''}/resume.pdf`;
+  
   return (
     <div id='about' className='w-[80%] px-[5%] py-20 scroll-mt-20 ml-[10%]'>
 
@@ -45,7 +48,7 @@ const About = () => {
             </div>
             <div className='inline-flex flex-col items-center justify-center gap-10'> 
                 <div className='relative hover:translate-y-1 duration-300'>
-                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
+                    <a href={resumePath} target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
                         <MotionImage
                             initial={{y: -30, opacity: 0}}
                             whileInView={{y: 0, opacity:1}}
@@ -60,8 +63,7 @@ const About = () => {
                             initial={{y: -30, opacity: 0}}
                             whileInView={{y: 0, opacity:1}}
                             transition={{duration: 0.3, delay: 0.8}}
-                            style={{fontFamily: "'Gloria Hallelujah', cursive"}}
-                            className='absolute inset-0 flex items-center justify-center text-gray text-[25px] font-mono text-bold'>
+                            className='absolute inset-0 flex items-center justify-center text-gray text-[25px] font-gloria text-bold'>
                         Resume
                         </motion.p>
                     </a>
@@ -81,15 +83,13 @@ const About = () => {
                         initial={{y: -30, opacity: 0}}
                         whileInView={{y: 0, opacity:1}}
                         transition={{duration: 0.3, delay: 0.8}}
-                        style={{fontFamily: "'Gloria Hallelujah', cursive"}}
-                        className='absolute inset-0 flex justify-center text-gray text-[25px] mt-[30%] font-mono text-bold'>
+                        className='absolute inset-0 flex justify-center text-gray text-[25px] mt-[30%] font-gloria text-bold'>
                         Art</motion.p>
                     <motion.p 
                         initial={{y: -30, opacity: 0}}
                         whileInView={{y: 0, opacity:1}}
                         transition={{duration: 0.3, delay: 0.8}}
-                        style={{fontFamily: "'Gloria Hallelujah', cursive"}}
-                        className='absolute bottom-9 text-gray text-[15px] font-mono text-bold'>
+                        className='absolute bottom-9 text-gray text-[15px] font-gloria text-bold'>
                         (Coming soon)</motion.p>
                 </div>
             </div>
