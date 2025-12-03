@@ -1,6 +1,4 @@
 import { Outfit, Ovo } from "next/font/google";
-import { assets } from "../assets/assets";
-
 import "./globals.css";
 
 const outfit = Outfit({
@@ -19,11 +17,22 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const isProd = process.env.NODE_ENV === 'production';
+  const basePath = isProd ? '/portfolio' : '';
+  const backgroundImage = `${basePath}/background.jpg`;
+
   return (
     <html lang="en" className="scroll-smooth">
       <body
         suppressHydrationWarning
-        className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden bg-[url('${assets.background.src}')] bg-cover bg-fixed bg-center bg-no-repeat min-h-screen m-0 p-0`}
+        className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden min-h-screen m-0 p-0`}
+        style={{
+          backgroundImage: `url('${backgroundImage}')`,
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
       >
         {children}
       </body>

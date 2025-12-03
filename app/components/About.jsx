@@ -36,7 +36,7 @@ const About = () => {
                     transition={{duration: 0.6, delay: 0.7}}
                     className='absolute inset-0 flex flex-col items-end justify-center mb-5 max-w-2xl text-[14px] leading-[2.0] -ml-[160px] mb-[80px]'>
                         <p className='w-[300px] font-gloria'>I’m Jinny Eo, a full-stack developer and Grinnell College senior who loves building clean, thoughtful digital experiences. </p>
-                        <p style={{fontFamily: "'Gloria Hallelujah', cursive"}} className='w-[400px] font-longCang'>I’ve led 
+                        <p className='w-[400px] font-gloria'>I’ve led 
                             engineering for real products, from iOS apps with thousands of users to full-stack tools that solve real problems on campus. 
                             I move fast, design with intention, and bring a mix of technical depth and creative curiosity to every project I take on.</p>
                     </motion.div>    
