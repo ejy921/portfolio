@@ -9,7 +9,7 @@ const MotionImage = motion.create(Image);
 
 const About = () => {
   const isProd = process.env.NODE_ENV === 'production';
-  const resumePath = `${isProd ? '/portfolio' : ''}/resume.pdf`;
+  const resumePath = `${isProd ? '/portfolio' : ''}Resume.pdf`;
   
   return (
     <div id='about' className='w-[80%] px-[5%] py-20 scroll-mt-20 ml-[10%]'>
