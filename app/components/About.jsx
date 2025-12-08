@@ -49,6 +49,7 @@ const About = () => {
             <div className='inline-flex flex-col items-center justify-center gap-10'> 
                 <div className='relative hover:translate-y-1 duration-300'>
                     <a href={resumePath} target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
+                        
                         <MotionImage
                             initial={{y: -30, opacity: 0}}
                             whileInView={{y: 0, opacity:1}}
