@@ -31,7 +31,7 @@ import youphoria from './youphoria.webp';
 import fiverr from './fiverr.webp';
 import investin from './investin.webp';
 import girls_who_code from './gwc.png';
-import tbs from './tbs.png';1
+import tbs from './tbs.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
