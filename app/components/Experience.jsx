@@ -11,7 +11,7 @@ const Experience = () => {
     return (
     <div id='experience' className='w-full justify-center px-[12%] py-10 scroll-mt-20'>
           <h2 className='text-center text-5xl font-Ovo mb-[25px]'>Experience</h2>
-          <p className='text-center items-center font-Ovo text-gray-600'>Hover on the cards to read more!</p>
+          <p className='text-center items-center font-Ovo text-gray-600'>Hover your mouse on the cards to read more!</p>
             <div className='relative w-full flex flex-col items-center py-16'>
 
                 <div className='absolute w-[5px] bg-gray-700 top-0 bottom-0 left-1/2 transform -translate-x-1/2'></div>
