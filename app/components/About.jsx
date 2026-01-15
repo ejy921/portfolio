@@ -12,9 +12,9 @@ const About = () => {
   const resumePath = `${isProd ? '/portfolio' : ''}/Resume.pdf`;
   
   return (
-    <div id='about' className='w-[80%] px-[5%] py-20 scroll-mt-20 ml-[10%]'>
+    <div id='about' className='w-[80%] px-[2%] py-20 scroll-mt-20 ml-[8%]'>
 
-        <div className='flex flex-col lg:flex-row items-center py-10 mt-8'>
+        <div className='flex flex-col lg:flex-row items-center py-10 mt-2'>
 
             <div className='relative max-w-[250px] h-[270px] rounded-3xl mb-[30px] overflow-hidden'>
                 <Image src={assets.profile_pic} alt="user" width={300} height={270} className='rounded-2xl object-cover object-fill' priority/>
@@ -26,19 +26,19 @@ const About = () => {
                 initial={{y: -30, opacity: 0}}
                 whileInView={{y:0, opacity:1}}
                 transition={{duration: 0.6, delay: 0.3}}
-                className='text-center text-6xl font-Ovo pb-6 pr-12'>Hi, I'm Jinny.</motion.h2>
-                <div className='relative w-[580px] h-[450px] mb-5 rounded-3xl overflow-hidden mx-auto'>
+                className='text-center text-6xl font-Ovo pb-2 pr-12'>Hi, I'm Jinny.</motion.h2>
+                <div className='relative w-[680px] h-[520px] mb-5 rounded-3xl overflow-hidden mx-auto'>
                     <MotionImage  
                     initial={{opacity: 0}}
                     whileInView={{opacity:1}}
                     transition={{duration: 0.6, delay: 0.5}}
-                    src={assets.tornpaper_1} alt="paper" priority fill="true" sizes="(max-width: 768px) 100vw, 580px" className='w-[400px] h-[300px] object-cover'/>
+                    src={assets.tornpaper_1} alt="paper" priority fill sizes="(max-width: 640px) 100vw, 600px" className='object-cover'/>
                     <motion.div 
                     initial={{opacity: 0}}
                     whileInView={{opacity:1}}
                     transition={{duration: 0.6, delay: 0.7}}
-                    className='absolute inset-0 flex flex-col items-end justify-center mb-5 max-w-2xl text-[14px] leading-[2.0] -ml-[160px] mb-[80px]'>
-                        <p className='w-[300px] font-gloria'>I’m Jinny Eo, a full-stack developer and Grinnell College senior who loves building clean, thoughtful digital experiences. </p>
+                    className='absolute inset-0 flex flex-col items-end justify-center mb-3 max-w-2xl text-[16px] leading-[2.0] -ml-[150px] mb-[60px]'>
+                            <p className='w-[350px] relative left-[80px] font-gloria'>I’m Jinny Eo, a full-stack developer and Grinnell College senior who loves building clean, thoughtful digital experiences. </p>
                         <p className='w-[400px] font-gloria'>I’ve led 
                             engineering for real products, from iOS apps with thousands of users to full-stack tools that solve real problems on campus. 
                             I move fast, design with intention, and bring a mix of technical depth and creative curiosity to every project I take on.</p>
