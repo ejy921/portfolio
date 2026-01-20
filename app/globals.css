@@ -12,3 +12,41 @@ html, body {
 .font-gloria {
   font-family: var(--font-gloria), "Gloria Hallelujah", cursive;
 }
+
+/* main cursor container */
+.mf-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* visible ball */
+.mf-cursor:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--mf-size, 30px);
+  height: var(--mf-size, 30px);
+  background: var(--mf-color, #000); /* Default color */
+  border-radius: 50%;
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+
+@media (min-width: 769px) {
+  html, body, a, button, input, textarea, select {
+    cursor: none !important;
+  }
+}
+
+/* hide on mobile to prevent UX issues */
+@media (max-width: 768px) {
+  .mf-cursor {
+    display: none !important;
+  }
+}

@@ -26,7 +26,7 @@ const About = () => {
                 initial={{y: -30, opacity: 0}}
                 whileInView={{y:0, opacity:1}}
                 transition={{duration: 0.6, delay: 0.3}}
-                className='text-center text-6xl font-Ovo pb-2 pr-12'>Hi, I'm Jinny.</motion.h2>
+                className='text-center text-6xl font-Ovo pb-2 pl-30'>Hi, I'm Jinny.</motion.h2>
                 <div className='relative w-[680px] h-[520px] mb-5 rounded-3xl overflow-hidden mx-auto'>
                     <MotionImage  
                     initial={{opacity: 0}}
@@ -37,9 +37,9 @@ const About = () => {
                     initial={{opacity: 0}}
                     whileInView={{opacity:1}}
                     transition={{duration: 0.6, delay: 0.7}}
-                    className='absolute inset-0 flex flex-col items-end justify-center mb-3 max-w-2xl text-[16px] leading-[2.0] -ml-[150px] mb-[60px]'>
-                            <p className='w-[350px] relative left-[80px] font-gloria'>I’m Jinny Eo, a full-stack developer and Grinnell College senior who loves building clean, thoughtful digital experiences. </p>
-                        <p className='w-[400px] font-gloria'>I’ve led 
+                    className='absolute inset-0 flex flex-col items-end justify-center mb-3 max-w-2xl text-[17px] leading-[2.0] -ml-[70px] mb-[80px]'>
+                        <p className='w-[350px] relative left-[0px] font-gloria'>I’m Jinny Eo, a full-stack developer and Grinnell College senior who loves building clean, thoughtful digital experiences. </p>
+                        <p className='w-[490px] font-gloria'>I’ve led 
                             engineering for real products, from iOS apps with thousands of users to full-stack tools that solve real problems on campus. 
                             I move fast, design with intention, and bring a mix of technical depth and creative curiosity to every project I take on.</p>
                     </motion.div>    
@@ -84,14 +84,9 @@ const About = () => {
                         initial={{y: -30, opacity: 0}}
                         whileInView={{y: 0, opacity:1}}
                         transition={{duration: 0.3, delay: 0.8}}
-                        className='absolute inset-0 flex justify-center text-gray text-[25px] mt-[30%] font-gloria text-bold'>
-                        Art</motion.p>
-                    <motion.p 
-                        initial={{y: -30, opacity: 0}}
-                        whileInView={{y: 0, opacity:1}}
-                        transition={{duration: 0.3, delay: 0.8}}
-                        className='absolute bottom-9 text-gray text-[15px] font-gloria text-bold'>
-                        (Coming soon)</motion.p>
+                        className='absolute inset-0 flex items-center justify-center text-gray text-[25px] font-gloria text-bold'
+                        href="#projects">
+                        Projects</motion.p>
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import { Outfit, Ovo, Gloria_Hallelujah } from "next/font/google";
 import "./globals.css";
+import VelocityCursor from "./components/VelocityCursor";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -40,6 +41,13 @@ export default function RootLayout({ children }) {
           backgroundRepeat: 'no-repeat',
         }}
       >
+
+        <VelocityCursor
+          size={40}
+          color="#c67ff5"
+          speed={0.4}
+          skewing={3}
+        />
         {children}
       </body>
     </html>
